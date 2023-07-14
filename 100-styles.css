@@ -15,7 +15,7 @@
     /* CSS rules specific to desktops */
   }  
 
-a{
+  a{
     color: white;
     text-decoration: none;
 }
@@ -33,24 +33,26 @@ body{
 
 .OurResult{
     background-image: url("headphones_hero_2.jpg");
-    background-size: cover;
-    background-position: cover;
+    background-size: stretch;
+    background-position: stretch;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    height: 320px;
+    height: fit-content;
 }
 
 .Backgroungcontainer{
     
     background-image: url("headphones_hero_1.jpg");
-    background-size: cover;
-    background-position: cover;
+    background-size: fit-content;
+    background-position: max-content;
     background-repeat: no-repeat;
     color: white;
-    height: 320px;
+    width: auto;
+    height: fit-content;
     
 }
+
 .what-we-do{
     color: black;
 

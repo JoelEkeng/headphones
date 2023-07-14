@@ -15,14 +15,16 @@
     /* CSS rules specific to desktops */
   }  
 
-a{
-    color: #FF6565;
+  a{
+    color: white;
     text-decoration: none;
+}
+a:hover{
+    color: #FF6565;
 }
 #Header{
     text-align: left;
 }
-
 body{
     text-align: center;
     max-width: 1000px;
@@ -31,22 +33,23 @@ body{
 
 .OurResult{
     background-image: url("headphones_hero_2.jpg");
-    background-size: cover;
-    background-position: cover;
+    background-size: stretch;
+    background-position: stretch;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    height: 320px;
+    height: fit-content;
 }
 
 .Backgroungcontainer{
     
     background-image: url("headphones_hero_1.jpg");
-    background-size: cover;
-    background-position: cover;
+    background-size: fit-content;
+    background-position: max-content;
     background-repeat: no-repeat;
     color: white;
-    height: 320px;
+    width: auto;
+    height: fit-content;
     
 }
 
