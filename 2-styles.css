@@ -1,5 +1,12 @@
 body{
     text-align: center;
+    background-image: url("headphones_hero_2.jpg");
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    height: 320px;
 }
 div{
     display: inline-block;
