@@ -52,6 +52,7 @@ body{
     height: fit-content;
     
 }
+
 .what-we-do{
     color: black;
 
@@ -116,7 +117,7 @@ input[type=text] {
     background-color: lightblue;
     position: relative;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    opacity:inherit;
+    opacity: inherit;
   }
 
 .pentagon::after {

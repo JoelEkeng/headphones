@@ -52,7 +52,10 @@ body{
     height: fit-content;
     
 }
-
+.footer{
+    background-image: url("headphones_hero_2.jpg");
+    background-position: 1000rem;
+}
 .what-we-do{
     color: black;
 
