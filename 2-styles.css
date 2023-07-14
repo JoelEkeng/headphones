@@ -1,3 +1,19 @@
+/* Default styles for all screen sizes */
+
+/* Styles for mobile */
+@media (max-width: 480px) {
+    /* CSS rules specific to mobile devices */
+  }
+  
+  /* Styles for tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* CSS rules specific to tablets */
+  }
+  
+  /* Styles for desktop */
+  @media (min-width: 769px) {
+    /* CSS rules specific to desktops */
+  }  
 body{
     text-align: center;
     background-image: url("headphones_hero_2.jpg");

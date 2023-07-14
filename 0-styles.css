@@ -16,7 +16,7 @@
   }  
 
 a{
-    color: white;
+    color: #FF6565;
     text-decoration: none;
 }
 #Header{
@@ -29,6 +29,7 @@ body{
     background-repeat: no-repeat;
     color: white;
     text-align: center;
+    max-width: 1000px;
 
 }
 .Backgroungcontainer{
@@ -64,6 +65,7 @@ body{
 
   }
   .red-button:hover{
+    opacity: 0.9;
     background-color: rgb(113, 22, 22);
 
   }
