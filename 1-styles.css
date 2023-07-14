@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+}
+.icon{
+    display: block;
+    justify-content: space-between;
+}
+.holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+    color: red;
+  }

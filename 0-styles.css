@@ -18,16 +18,20 @@
 a{
     color: white;
 }
-
-.Backgroungcontainer{
-    height: 320px;
-    text-align: center;
-    justify-content: center;
-    background-image: url("headphones_hero_1.jpg");
+#Header{
+    text-align: left;
+}
+body{
+  background-image: url("headphones_hero_1.jpg");
     background-size: cover;
     background-position: cover;
     background-repeat: no-repeat;
     color: white;
+    text-align: center;
+
+}
+.Backgroungcontainer{
+    height: 320px;
     
 }
 
@@ -50,12 +54,16 @@ a{
 }
 
 .red-button {
-    background-color: red;
+    background-color: rgb(229, 13, 13);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
-    cursor: pointer;
+    cursor:  pointer;
+
+  }
+  .red-button:hover{
+    background-color: rgb(113, 22, 22);
 
   }
   
