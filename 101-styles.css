@@ -26,18 +26,9 @@ a:hover{
     text-align: left;
 }
 body{
-    color: white;
     text-align: center;
     max-width: 1000px;
 
-}
-.Backgroungcontainer{
-    background-image: url("headphones_hero_1.jpg");
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
-    height: 320px;
-    
 }
 
 .OurResult{
@@ -48,6 +39,17 @@ body{
     color: white;
     text-align: center;
     height: 320px;
+}
+
+.Backgroungcontainer{
+    
+    background-image: url("headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 320px;
+    
 }
 .what-we-do{
     color: black;

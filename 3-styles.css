@@ -22,17 +22,14 @@ a{
 #Header{
     text-align: left;
 }
+
 body{
-    background-image: url("headphones_hero_1.jpg");
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
-    color: white;
     text-align: center;
     max-width: 1000px;
 
 }
-section .OurResult{
+
+.OurResult{
     background-image: url("headphones_hero_2.jpg");
     background-size: cover;
     background-position: cover;
@@ -43,9 +40,16 @@ section .OurResult{
 }
 
 .Backgroungcontainer{
+    
+    background-image: url("headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
     height: 320px;
     
 }
+
 .what-we-do{
     color: black;
 
