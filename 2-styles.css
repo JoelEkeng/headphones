@@ -46,6 +46,10 @@ section .OurResult{
     height: 320px;
     
 }
+.what-we-do{
+    color: black;
+
+}
 
 .navbar-menu{
     position: fixed;
