@@ -14,17 +14,57 @@
   @media (min-width: 769px) {
     /* CSS rules specific to desktops */
   }  
-body{
-    text-align: center;
+
+a{
+    color: #FF6565;
+    text-decoration: none;
 }
-input[type=text] {
-    width: 50%;
-    padding: 10px 10px;
+#Header{
+    text-align: left;
+}
+body{
+    background-image: url("headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    max-width: 1000px;
+
+}
+section .OurResult{
+    background-image: url("headphones_hero_2.jpg");
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    height: 320px;
+}
+
+.Backgroungcontainer{
+    height: 320px;
+    
+}
+
+.navbar-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
     margin: 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px black;
-  }
+    padding: 10px;
+    list-style-type: none;
+}
+  
+.navbar-menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+ 
+.navbar-menu li:first-child {
+    margin-left: 0;
+}
+
 .red-button {
     background-color: rgb(229, 13, 13);
     color: white;
@@ -33,8 +73,27 @@ input[type=text] {
     border-radius: 25px;
     cursor:  pointer;
 
-}
-.red-button:hover{
+  }
+  .red-button:hover{
+    opacity: 0.9;
     background-color: rgb(113, 22, 22);
 
+  } 
+div{
+    display: inline-block;
+    justify-content: space-evenly;
+    
 }
+.holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+    color: red;
+  }
+
+input[type=text] {
+    width: 50%;
+    padding: 10px 10px;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px black;
+  }

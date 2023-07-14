@@ -14,9 +14,61 @@
   @media (min-width: 769px) {
     /* CSS rules specific to desktops */
   }  
+
+a{
+    color: #FF6565;
+    text-decoration: none;
+}
+#Header{
+    text-align: left;
+}
 body{
+    background-image: url("headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
     text-align: center;
-}  
+    max-width: 1000px;
+
+}
+.Backgroungcontainer{
+    height: 320px;
+    
+}
+
+.navbar-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+}
+  
+.navbar-menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+ 
+.navbar-menu li:first-child {
+    margin-left: 0;
+}
+
+.red-button {
+    background-color: rgb(229, 13, 13);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor:  pointer;
+
+  }
+  .red-button:hover{
+    opacity: 0.9;
+    background-color: rgb(113, 22, 22);
+
+  } 
 div{
     display: inline-block;
     justify-content: space-evenly;
