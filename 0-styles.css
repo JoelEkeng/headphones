@@ -16,8 +16,11 @@
   }  
 
 a{
-    color: #FF6565;
+    color: white;
     text-decoration: none;
+}
+a:hover{
+  color: #FF6565;
 }
 #Header{
     text-align: left;
@@ -66,7 +69,6 @@ body{
   }
   .red-button:hover{
     opacity: 0.9;
-    background-color: rgb(113, 22, 22);
 
   }
   
