@@ -1,0 +1,63 @@
+/* Default styles for all screen sizes */
+
+/* Styles for mobile */
+@media (max-width: 480px) {
+    /* CSS rules specific to mobile devices */
+  }
+  
+  /* Styles for tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* CSS rules specific to tablets */
+  }
+  
+  /* Styles for desktop */
+  @media (min-width: 769px) {
+    /* CSS rules specific to desktops */
+  }  
+
+a{
+    color: white;
+}
+
+.Backgroungcontainer{
+    height: 320px;
+    text-align: center;
+    justify-content: center;
+    background-image: url("headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+
+.navbar-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+}
+  
+.navbar-menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+ 
+.navbar-menu li:first-child {
+    margin-left: 0;
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+
+  }
+  
+  
+  
