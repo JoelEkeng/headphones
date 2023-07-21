@@ -1,102 +1,213 @@
-/* Default styles for all screen sizes */
+/* variables */
 
-/* Styles for mobile */
-@media (max-width: 480px) {
-    /* CSS rules specific to mobile devices */
+:root {
+    --primary: #FF6565;
   }
   
-  /* Styles for tablets */
-  @media (min-width: 481px) and (max-width: 768px) {
-    /* CSS rules specific to tablets */
-  }
+  /* reset */
   
-  /* Styles for desktop */
-  @media (min-width: 769px) {
-    /* CSS rules specific to desktops */
-  }  
-
-a{
-    color: white;
-    text-decoration: none;
-}
-a:hover{
-    color: #FF6565;
-}
-#Header{
-    text-align: left;
-}
-body{
-    text-align: center;
-    max-width: 1000px;
-
-}
-
-.OurResult{
-    background-image: url("headphones_hero_2.jpg");
-    background-size: stretch;
-    background-position: stretch;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    height: fit-content;
-}
-
-.Backgroungcontainer{
-    
-    background-image: url("headphones_hero_1.jpg");
-    background-size: fit-content;
-    background-position: max-content;
-    background-repeat: no-repeat;
-    color: white;
-    width: auto;
-    height: fit-content;
-    
-}
-
-.what-we-do{
-    color: black;
-
-}
-
-.navbar-menu{
-    position: fixed;
-    top: 0;
-    right: 0;
+  body,p,a,ul,li {
     margin: 0;
-    padding: 10px;
+    padding: 0;
+    text-decoration: none;
     list-style-type: none;
-}
+    text-align: center;    
+  }
   
-.navbar-menu li {
-    display: inline-block;
-    margin-left: 10px;
-}
- 
-.navbar-menu li:first-child {
-    margin-left: 0;
-}
-
-.red-button {
-    background-color: rgb(229, 13, 13);
-    color: white;
-    padding: 10px 20px;
+  /* base styles */
+  
+  body {
+    font-family: 'Source San Pro';
+    overflow-x: hidden;
+  }
+  
+  button {
+    background: var(--primary);
+    border-radius: 20px;
+    color: #f2f2f2;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 2, 0, 0.5);
     border: none;
-    border-radius: 25px;
-    cursor:  pointer;
-
+    font-weight: 600;
+    font-size: 0.5em;
   }
-  .red-button:hover{
+  
+  button:hover {
     opacity: 0.9;
-    background-color: rgb(113, 22, 22);
-
-  } 
-div{
-    display: inline-block;
-    justify-content: space-evenly;
+    color: rgb(63, 63, 63);
+    box-shadow: none;
+  }
     
-}
-.holberton_school-icon-ic_hearing:before {
-    content: "\e909";
-    color: red;
+  /* fonts */
+  @font-face {
+    font-family: 'Source San Pro';
+    src: url('../assets/fonts/SourceSansPro-Regular.otf');
+  }
+  
+  section {
+    padding: 10%;
+  }
+  
+  .hero {
+    background-image: url('headphones_hero_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #f2f2f2;
   }
 
+  .OurResult {
+    background-image: url('headphones_hero_2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #f2f2f2;
+  }
+  
+  header {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .logo {
+    margin: 0 auto;
+  }
+  
+  
+  .navlinks {
+    display: none;
+  }
+  
+  .navlinks a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #menu-toggle:checked ~ .navlinks {
+    display: flex; /* Show the menu when the checkbox is checked */
+    flex-direction: column;
+    position: absolute;
+    font-weight: 900;
+    top: 80px;
+    left: 0;
+    width: 100%;
+  }
+  
+  .banner-content h1 {
+    padding: 75px 7px 0;
+  }
+  
+  .banner-content p, #services p {
+    font-size: 0.7em;
+    padding: 5%;
+  }
+  
+  .service-item-container {
+    padding: 15%;
+    margin-top: 30%;
+  }
+  
+  .service-item {
+    margin: 5%;
+  }
+  
+  .service-item:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  /* responsive styles */
+  
+  /* tablet */
+  @media screen and (min-width: 480px) {
+    body {
+        font-size: 1.2em;
+    }
+  
+    .menu-icon {
+        display: none;
+    }
+  
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navlinks {
+        display: inline;
+  
+    }
+  
+    .navlinks li {
+        display: inline;
+    }
+  
+    .navlinks ul a {
+        color: white;
+        text-align: center;
+        padding: 6px 8px;
+        text-decoration: none;
+        font-size: 1em;
+      }
+    
+    .numbers, .service-item-container{
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      justify-items: stretch;
+      align-items: stretch;
+    }
+
+    .service-item-container {
+        margin-top: 0;
+    } 
+  }
+  
+  /* desktop */
+  @media screen and (min-width: 1000px) {
+    body {
+        font-size: 1.6em;
+    }
+  
+    .menu-icon {
+        display: none;
+    }
+  
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navlinks {
+        display: inline;
+  
+    }
+  
+    .navlinks li {
+        display: inline;
+    }
+  
+    .navlinks ul a {
+        color: white;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+    .numbers, .service-item-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    .service-item-container {
+        margin-top: 0;
+    }
+    
+  }
