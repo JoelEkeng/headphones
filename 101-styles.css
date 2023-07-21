@@ -219,6 +219,12 @@ footer img {
   padding: 5%;
 }
 
+.col-1-2{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f2f2f2;
+}
+
 /* responsive styles */
 
 /* tablet */
